@@ -1,0 +1,30 @@
+body, html {
+    height: 100%;
+     margin: 0;
+}
+body {
+   background-image: url(" http://i768.photobucket.com/albums/xx323/ktmighty/Video-Games2.gif");
+   background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+ div.transbox {
+     margin: 30px;
+     background-color: #ffffff;
+     border: 1px solid black;
+     opacity: 0.8;
+     filter: alpha(opacity=80);}
+ div.transbox p {
+  margin: 10%;
+  font-weight: bold;
+  color: #000000;
+}
+h1{
+  color: red;
+  text-align: center;
+   text-shadow: 3px 2px blue;
+}
+p{
+text-align: center;
+ text-shadow: none
+}
