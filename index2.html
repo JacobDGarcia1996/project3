@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
 <link rel="stylesheet" href="project.css">
+<script src="project.js">
+</script>
 </head>
-<body>
+<body onload="fetch()">
   <h1>
     <nav>
       <a href="index.html">Sighn In</a> |
@@ -14,7 +16,8 @@
       <a href="results.html">Recomendations</a>
 
     </nav>
-    <div class ="transbox"><h1>Hello <span id ="gamertag"> </span>lets begin</h1>
+    <div class ="transbox"><h1>Hello <span id ="gamertag">
+    </span>lets begin</h1>
     </div>
     <div class ="transbox">
       <h2>What would you prefer to play on?</h2>
@@ -25,7 +28,7 @@
         <label for="preference">Desktop/laptop</label>
         <input type="checkbox" name="comp" id="desk" value="comp"><br>
       </form><br>
-        <button id="choices" type="button" class="btn btn-primary" onclick="  " >
+        <button id="choices" type="button" class="btn btn-primary" onclick="  " a href="index3.html">
 Continue</button>
 <br>
 <br>
