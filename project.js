@@ -4,3 +4,12 @@ function setCookie(cname, cvalue, exdays) {
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
+span:hover{
+  display: block;
+}
+B:hover{
+  display: block;
+}
+A:hover{
+  display: block;
+}
