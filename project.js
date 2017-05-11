@@ -208,7 +208,11 @@ var long= document.getElementById("quest").checked;
   }
 
 }
-
+function reslutrin(){
+  var answer2=document.getElementById('name').value;
+  var asnwer3 document.getElementById('name').value;
+  var answer4 =document.getElementById('name').value;
+}
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
