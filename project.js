@@ -2,6 +2,7 @@ var answer1;
 var answer2;
 var answer3;
 var answer4;
+var yourgame;
 function gamertag(){
 var answer1=document.getElementById('name').value;
 setCookie("tag",answer1,2);
@@ -33,4 +34,20 @@ function getCookie(cname) {
     }
     return "";
 }
-var yourgame
+function decission(){
+var station = document.getElementById("con").checked;
+var pc = document.getElementById("desk").checked;
+
+  if (!con && !desk){
+  alert("both");
+  }
+  else if (con && !desk){
+    alert('desk only')
+  }
+  else if (!con && desk){
+    alert('con only')
+  }
+  else {
+    alert('you havent selected anything')
+  }
+}
