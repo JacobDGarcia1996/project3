@@ -208,16 +208,7 @@ var long= document.getElementById("quest").checked;
   }
 
 }
-function sugestions()
-{
-  var result2 = getCookie('preference')
-   document.getElementById("2nd").innerhtml=result2
-  var result3 = getCookie('Cselection')
-  document.getElementById("3rd").innerhtml=result3
-  var result4 = getCookie('subc')
-  document.getElementById("4th").innerhtml=result4
-}
-function
+
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
@@ -232,6 +223,15 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+function sugestions()
+{
+  var result2 = getCookie('preference')
+   document.getElementById("2nd").innerhtml=result2
+  var result3 = getCookie('Cselection')
+  document.getElementById("3rd").innerhtml=result3
+  var result4 = getCookie('subc')
+  document.getElementById("4th").innerhtml=result4
 }
 
 var consoles [consol:mmo: "GTA, Destiny",rpg: "Skyrim, Dragon Age",fps/tps: " Call of duty, Mass Effect",Desktop:mmo: "World of Warcraft, Runescape" rpg: "Skyrim, Sims" fps/tps:"C.S.G.O, Ghost in a shell"]
