@@ -2,7 +2,6 @@ var answer1;
 var answer2;
 var answer3;
 var answer4;
-var yourgame;
 var results1;
 var results2;
 var results3;
@@ -38,6 +37,7 @@ function getCookie(cname) {
     }
     return "";
 }
+
 function decission(){
 var station = document.getElementById("con").checked;
 var pc = document.getElementById("desk").checked;
@@ -47,12 +47,10 @@ var pc = document.getElementById("desk").checked;
   window.location.href="index3.html";
   }
   else if (station && !pc){
-
     setCookie("preference",answer2,2);
     window.location.href="index3.html";
   }
   else if (!station && pc){
-
     setCookie("preference",answer2,2);
     window.location.href="index3.html";
   }
@@ -60,10 +58,6 @@ var pc = document.getElementById("desk").checked;
     alert('you havent selected anything')
   }
 }
-
-
-
-
 
 function typeogame(){
   var shooters = document.getElementById("shots").checked;
@@ -100,4 +94,117 @@ window.location.href="index4.html";
 }
 else{
   alert ('you havent selected anything')
+}
+}
+
+function subtype(){
+  var scar= document.getElementById("scare").checked;
+  var brain= document.getElementById("stuck").checked;
+  var future= document.getElementById("sci").checked;
+var past= document.getElementById("mmo").checked;
+var long= document.getElementById("quest").checked;
+
+  if(scar && brain && future  && past && long){
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if (!scar && brain && future  && past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if (scar && !brain && future  && past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(scar && brain && !future  && past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(scar && brain && future  && !past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(scar && brain && future  && past && !long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(!scar && !brain && future  && past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+}
+  else if(!scar && brain && !future && past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  } else if(!scar && brain && future  && !past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(!scar && brain && future  && past && !long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(!scar && !brain && !future  && past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+   else if(!scar && !brain && future  && !past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(!scar && !brain && future  && past && !long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(!scar && !brain && !future  && !past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(!scar && !brain && !future  && past && !long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(!scar && !brain && future  && !past && !long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(!scar && brain && !future  && !past && !long) {
+    setCookie("Cselection",answer4,2);
+    window.location.href="results.html";
+  }
+  else if(scar && !brain && !future  && !past && !long) {
+    setCookie("Cselection",answer4,2);
+    window.location.href="results.html";
+  }
+  else if(scar && brain && !future  && !past && !long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(scar && !brain && future  && !past && !long) {
+    setCookie("Cselection",answer4,2);
+    window.location.href="results.html";
+  }
+  else if(scar && !brain && !future  && past && !long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+  else if(scar && !brain && !future  && !past && long) {
+    setCookie("Cselection",answer4,2);
+  window.location.href="results.html";
+  }
+   else if(scar && brain && future  && !past && !long) {
+    setCookie("Cselection",answer4,2);
+    window.location.href="results.html";
+  }
+  else if(scar && brain && !future  && !past && long) {
+    setCookie("Cselection",answer4,2);
+    window.location.href="results.html";
+  }
+  else if(scar && brain && !future  && past && !long) {
+    setCookie("Cselection",answer4,2);
+    window.location.href="results.html"
+  }
+  else{
+    alert ('you havent selected anything')
+  }
+
 }
