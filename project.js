@@ -3,13 +3,17 @@ var answer2;
 var answer3;
 var answer4;
 var yourgame;
+var results1;
+var results2;
+var results3;
+var results4;
 function gamertag(){
 var answer1=document.getElementById('name').value;
-setCookie("tag",answer1,2);
+setCookie("tag",answer1 + " ",2);
 window.location.href="index2.html";
 }
 function setCookie(cname, cvalue, exdays) {
-    var d = new Date(5);
+    var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
@@ -38,16 +42,62 @@ function decission(){
 var station = document.getElementById("con").checked;
 var pc = document.getElementById("desk").checked;
 
-  if (!con && !desk){
-  alert("both");
+  if (station && pc){
+    setCookie("preference",answer2,2);
+  window.location.href="index3.html";
   }
-  else if (con && !desk){
-    alert('desk only')
+  else if (station && !pc){
+
+    setCookie("preference",answer2,2);
+    window.location.href="index3.html";
   }
-  else if (!con && desk){
-    alert('con only')
+  else if (!station && pc){
+
+    setCookie("preference",answer2,2);
+    window.location.href="index3.html";
   }
   else {
     alert('you havent selected anything')
   }
+}
+
+
+
+
+
+function typeogame(){
+  var shooters = document.getElementById("shots").checked;
+  var ledges = document.getElementById("plats").checked;
+  var roleplay = document.getElementById("role").checked;
+
+if (shooters && ledges && roleplay){
+  setCookie("Cselection",answer3,2);
+window.location.href="index4.html";
+}
+else if (!shooters && ledges && roleplay) {
+  setCookie("Cselection",answer3,2);
+window.location.href="index4.html";
+}
+else if (!shooters && !ledges && roleplay) {
+  setCookie("Cselection",answer3,2);
+window.location.href="index4.html";
+}
+else if (!shooters && ledges && !roleplay) {
+  setCookie("Cselection",answer3,2);
+window.location.href="index4.html";
+}
+else if (shooters && !ledges && roleplay) {
+  setCookie("Cselection",answer3,2);
+window.location.href="index4.html";
+}
+else if (shooters && !ledges && !roleplay) {
+  setCookie("Cselection",answer3,2);
+window.location.href="index4.html";
+}
+else if (shooters && ledges && !roleplay) {
+  setCookie("Cselection",answer3,2);
+window.location.href="index4.html";
+}
+else{
+  alert ('you havent selected anything')
 }

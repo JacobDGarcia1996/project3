@@ -18,10 +18,11 @@
       <a href="results.html">Recomendations</a>
     </nav>
 
-    <div class ="transbox"><p>hello lets<span id ="gamertag"></span> begin</p>
+    <div class ="transbox"><h1>For the next step <span id ="gamertag"></span> were going to see what type of game you would prefer to play </h1>
     </div>
     <div class ="transbox">
-      <h2>lets pick a type</h2>
+      <h2><span id ="gamertag">
+      </span> pick a type</h2>
       <p> below are the basic types of games formats.
         select your preference then hit continue.
       if your not quite sure what these are fear
@@ -29,19 +30,29 @@
       <form action="/action_page.php">
         <label for="type"><div class="role"> Role Playing Game<div class= "dropdown-content"><p> RPG's, Role Playing Games offer the player unique freedoms and choices such as player
           customization and no liniar stories alowing the player to chose there own path and adventure</p></div></div></label>
-        <input type="checkbox" name="station" id="G" value="station"><br><br>
+        <input  id="role" type="checkbox" name="station" value="station"><br><br>
         <label for="type"><div class= "shoot"> First/Third Person Shooter<div class= "dropdown-content">
           <p>FPS and TPS, First and Third Person Shooters are typically linear
             stories following one to several characters. as the name sugests you the player see the world from the eyes of the protagonist or from a
             third person viewpoint or floating camera. these usually have great stories to follow along as you continue to progress through them.</p></div></div></label>
-        <input type="checkbox" name="comp" id="B" value="comp"><br><br>
-        <label for="type"><div class = "plat">Platformer<div class= "dropdown-content">
+        <input  id="shots" type="checkbox"
+        name="comp"
+         value="comp"><br><br>
+        <label for="type">
+          <div class = "plat">Platformer<div class= "dropdown-content">
           <p>platformers are amoung the most iconic of
            games to play. in a typicall platformer the plater views the game from a 2D stand point, allowing them to see the character and a good chunk of the
           surounding area. platformers primerily consist of jumping obticles and minor combat.</p></div></div></label>
-        <input type="checkbox" name="comp" id="A" value="comp"><br><br>
+        <input id="plats"
+        type="checkbox"
+        name="comp"
+        value="comp"><br><br>
+
       </form>
-        <button id="choices" type="button" class="btn btn-primary" onclick= >
+        <button id="choices"
+        type="button" class="btn btn-primary"
+        onclick="typeogame()"
+        a href="index4.html">
       Continue</button>
       <br>
       <br>
