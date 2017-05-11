@@ -98,6 +98,7 @@ else{
 }
 
 function subtype(){
+  var answer4=document.getElementById('subc').value;
   var scar= document.getElementById("scare").checked;
   var brain= document.getElementById("stuck").checked;
   var future= document.getElementById("sci").checked;
@@ -105,102 +106,101 @@ var past= document.getElementById("mmo").checked;
 var long= document.getElementById("quest").checked;
 
   if(scar && brain && future  && past && long){
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if (!scar && brain && future  && past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if (scar && !brain && future  && past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(scar && brain && !future  && past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(scar && brain && future  && !past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(scar && brain && future  && past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(!scar && !brain && future  && past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
 }
   else if(!scar && brain && !future && past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   } else if(!scar && brain && future  && !past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(!scar && brain && future  && past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(!scar && !brain && !future  && past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
-  }
-   else if(!scar && !brain && future  && !past && long) {
-    setCookie("Cselection",answer4,2);
+  } else if(!scar && !brain && future  && !past && long) {
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(!scar && !brain && future  && past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(!scar && !brain && !future  && !past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(!scar && !brain && !future  && past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(!scar && !brain && future  && !past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(!scar && brain && !future  && !past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
     window.location.href="results.html";
   }
   else if(scar && !brain && !future  && !past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
     window.location.href="results.html";
   }
   else if(scar && brain && !future  && !past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(scar && !brain && future  && !past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
     window.location.href="results.html";
   }
   else if(scar && !brain && !future  && past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
   else if(scar && !brain && !future  && !past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
   window.location.href="results.html";
   }
    else if(scar && brain && future  && !past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
     window.location.href="results.html";
   }
   else if(scar && brain && !future  && !past && long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
     window.location.href="results.html";
   }
   else if(scar && brain && !future  && past && !long) {
-    setCookie("Cselection",answer4,2);
+    setCookie("subc",answer4,2);
     window.location.href="results.html"
   }
   else{
@@ -208,3 +208,30 @@ var long= document.getElementById("quest").checked;
   }
 
 }
+function sugestions()
+{
+  var result2 = getCookie('preference')
+   document.getElementById("2nd").innerhtml=result2
+  var result3 = getCookie('Cselection')
+  document.getElementById("3rd").innerhtml=result3
+  var result4 = getCookie('subc')
+  document.getElementById("4th").innerhtml=result4
+}
+function
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+var consoles [consol:mmo: "GTA, Destiny",rpg: "Skyrim, Dragon Age",fps/tps: " Call of duty, Mass Effect",Desktop:mmo: "World of Warcraft, Runescape" rpg: "Skyrim, Sims" fps/tps:"C.S.G.O, Ghost in a shell"]
